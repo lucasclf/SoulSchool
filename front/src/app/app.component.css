@@ -1,0 +1,13 @@
+mat-card{
+    background-color: gainsboro;
+    height: 85vh;
+}
+mat-toolbar{
+    background-color: #005ecb;
+    text-align: center;
+}
+button{
+    background-color: #005ecb;
+    color: white;
+    margin-left: 5vw;
+}

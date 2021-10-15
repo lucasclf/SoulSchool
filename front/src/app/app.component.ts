@@ -7,4 +7,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'front';
+
+  public system:string = 'initial'
+
+  changeSystem(systemMode:String){
+    if(systemMode == 'teacher'){
+      this.system = 'teacher'
+    }else{
+      this.system = 'student'
+    }
+
+  }
 }
