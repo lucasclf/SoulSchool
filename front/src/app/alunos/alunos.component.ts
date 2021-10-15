@@ -12,10 +12,6 @@ import { AlunosService } from './alunos.service';
 })
 export class AlunosComponent implements OnInit {
 
-
-/*   studentChemistry:string = '0'
-  studentPortuguese:string = '0'
-  studentMatemathic:string = '0' */
   studentName: string = ''
   studentEnrollment: string = ''
   studentNote: [string, number][]  = [

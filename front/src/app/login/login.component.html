@@ -1,0 +1,33 @@
+<div fxLayout="column" fxLayoutAlign="space-between" *ngIf="mode=='login'">
+    <mat-form-field>
+        <input matInput [(ngModel)]="studentEnrollment">
+        <mat-hint>Matricula do Aluno</mat-hint>
+    </mat-form-field>
+
+    <mat-form-field>
+        <input matInput [(ngModel)]="studentPassword">
+        <mat-hint>Senha do Aluno</mat-hint>
+    </mat-form-field>
+    
+    <div fxLayout="row" fxLayoutAlign="space-between">
+        <button mat-raised-button color="primary" (click)="logarStudent()"> Logar</button>
+
+    </div>
+
+</div>
+
+<div fxLayout="column" fxLayoutAlign="space-between" *ngIf="mode=='user'">
+    <mat-list>
+        <h3 mat-subheader>Alunos</h3>
+        <mat-list-item>
+            <mat-icon mat-list-icon>list</mat-icon>
+            <h4 mat-line>NOME DO ALUNO: {{dataStudent.name}}</h4>
+            <h4 mat-line>MATRICULA DO ALUNO: {{dataStudent.enrollment}}</h4>
+            <h4 mat-line>NOTA DE QUIMICA: {{dataStudent.grade[0][1]}}</h4>
+            <h4 mat-line>NOTA DE PORTUGUES: {{dataStudent.grade[1][1]}}</h4>
+            <h4 mat-line>NOTA DE MATEMATICA: {{dataStudent.grade[2][1]}}</h4>
+        </mat-list-item>
+        <button mat-raised-button color="primary" (click)="changeMode()">Logout</button>
+    </mat-list>
+
+</div>
